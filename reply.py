@@ -7,7 +7,7 @@ def reply(user, username, message):
 	if os.path.isfile(filename):
 		kernel.bootstrap(brainFile = filename)
 	else:
-		res = 'unknown user' + name
+		res = 'unknown user' + username
 		return res
 
 	bot_response = kernel.respond(message)
